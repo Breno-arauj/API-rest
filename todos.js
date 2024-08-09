@@ -41,19 +41,39 @@
 // }
 
 
-    // criar um recurso utilizando o REST API do jsonplaceholder
+// criar um recurso utilizando o REST API do jsonplaceholder
 
-    fetch('https://jsonplaceholder.typicode.com/todos/', {
-        method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    userId: 2,
-                    title: "Vamos para a festa de amanha",
-                    body: "Quero ir com a minha familia e amigos!"
-                    
-                })
-    })
+// fetch('https://jsonplaceholder.typicode.com/todos/', {
+//     method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify({
+//                 userId: 2, 
+//                 title: "Vamos para a festa de amanha",
+//                 body: "Quero ir com a minha familia e amigos!"
+
+//             })
+// })
+// .then(response => response.json())
+// .then(json => console.log(json))
+
+// fetch('https://jsonplaceholder.typicode.com/todos/', {
+//         method: 'PATCH',
+//                  headers: {
+//                      'Content-Type': 'application/json'
+//                  },
+//                 body: JSON.stringify({
+//                     title: "Titulo Post atualizado",
+
+//                 })
+//      })
+//     .then(response => response.json())
+//     .then(json => console.log(json))
+
+
+fetch('https://jsonplaceholder.typicode.com/posts/22', {
+    method: 'DELETE',
+})
     .then(response => response.json())
     .then(json => console.log(json))
